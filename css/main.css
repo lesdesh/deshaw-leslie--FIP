@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+p{
+    color: #000;
+    font-size: 30px ;
+    text-align: left;
+    margin: 0;
+    font-family: bely,serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2{
+    font-size: 45px;
+    font-family: bely,serif;
+    color:#BA2329;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+body{
+   
+    font-size: 12px;
+    color: #333;
+    font-family: bely,serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color:#313131;
+
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    color: #666;
+}
+.hidden {
+    display: none;
+}
+
+
+
+#siteContainer{
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right:20px
+}
+#mainHeader{
+    margin-top: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;
+    border-bottom: solid 1px  #FCB847;
+}
+
+#logo {
+    width: 280px;
+    height: 135px;
+    margin-left:800px;
+
+}
+#mainNav{
+    float: left;
+    width: 75px;
+    height: 75px;
+}
+
+#welcome{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    overflow: hidden;
+
+}
+#welcome p{
+    line-height: 586px;
+}
+#welcomeimagewithtext {
+    float:left;
+    width: 1920px;
+    height: 586px;
+}
+
+#welcomeimagewithtext img {
+    opacity: 1;
+
+}
+
+#welcomeimagewithtext img:hover{
+    opacity: 0.7;
+
+}
+    
+
+#productLine{
+    margin-top:40px;
+    overflow: hidden;
+    border-bottom: solid 1px  #FCB847;
+    padding-bottom: 40px;
+}
+
+#productLineImage{
+    float:left;
+    width: 900px;
+    height: 682px;
+}
+
+#productLineImage img{
+    opacity: 1;
+}
+
+#productLineImage img:hover{
+    opacity:0.7;
+}
+
+#advertismentsImage {
+    float: right;
+    width: 900px;
+    height: 682px;
+}
+
+#advertismentsImage img{
+    opacity: 1;
+}
+#advertismentsImage img:hover{
+    opacity: 0.7;
+}
+#productLine p{
+    line-height: 682px;
+}
+
+#mainFooter {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    border-bottom: solid 1px #FCB847;
+}
+
+#footerlogo{
+    float: left;
+    width:100px; 
+    height:100px;
+    margin: 20px
+}
+#footerNav{
+    float: left;
+    width:175px;
+    height:75px;
+    margin: 20px;
+}
+#copyright{
+    float: right;
+    width: 310px;
+    height:75px;
+    margin: 20px;
+}
+
+/*About us Page*/
+
+#Beginnings{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    border-bottom: solid 1px  #FCB847;
+
+}
+#beginningsimage p{
+    line-height: 586px;
+}
+#beginningsimage {
+    float:left;
+    width: 780px;
+    height: 615px;
+}
+    
+
+#Beginningstext{
+    overflow: hidden;
+  
+    width: 1026px;
+    
+}
+#Beginningstext p{
+
+    margin-left: 20px
+}
+
+#beginningsbottom{
+    float: left;
+}
+
+#productLine{
+    margin-top:40px;
+    overflow: hidden;
+    border-bottom: solid 1px  #FCB847;
+    padding-bottom: 40px;
+}
+
+
+#approachtext{
+    line-height: 482px;
+    width: 1900px;
+    height: 482px;
+}
+#approachtext p{
+    line-height: 482px;
+}
+
+.slider{
+    margin:50px auto;
+    width: 50%;
+}
+
+.img-box img{
+    width: 100%;
+}
+
+.btn{
+   border:none;
+   outline: none;
+   background-color: #333; 
+   padding: 10px 30px;
+   font-size: 20px;
+   color: #ddd;
+   cursor: pointer;
+   margin: 10px auto;
+
+}
+
+.btn:hover{
+    color: #000;
+}

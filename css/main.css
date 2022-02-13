@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-p{
+/*p{
     color: #000;
     font-size: 30px ;
     text-align: left;
@@ -8,7 +8,7 @@ p{
     font-family: bely,serif;
     font-weight: 400;
     font-style: normal;
-}
+}*/
 
 h2{
     font-size: 45px;
@@ -51,8 +51,80 @@ a:hover, a:active {
 #mainHeader{
     margin-top: 40px;
     padding-bottom: 40px;
-    overflow: hidden;
+    overflow: ;
     border-bottom: solid 1px  #FCB847;
+}
+#menubtn{
+    width: 75px;
+}
+#logoimg{
+    width:245px
+}
+nav p{
+    font-family: bely, serif;
+    color: #222;
+    font-size: 45px;
+    line-height: 55px;
+    float: left;
+    padding: 0px 20px;
+}
+
+nav ul{
+    float: left;
+}
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+nav ul li a{
+    display: block;
+    font-family: bely, serif;
+    color: #0B182F;
+    font-size: 14px;
+    padding: 17px 14px;
+    text-decoration: none;
+    
+}
+
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: white;
+    border:solid 1.5px #BA2329;
+    padding: 7px;
+    border-radius: 0px 6px 6px 6px;
+    transition-delay: 0.3ms;
+}
+nav ul li:hover ul{
+    display: block;
+    
+}
+
+nav ul li ul li {
+    width: 180px ;
+    border-radius: 4px;
+  }
+nav ul li ul li a{
+  padding: 10px 14px;
+}
+nav ul li ul li a:hover{
+    background-color: #f3f3f3;
+    color:#BA2329;
+  }
+  
+#footernav {
+    display: block;
+    font-family: bely, serif;
+    color: #222;
+    font-size: 17px;
+    padding: 17px 14px;
+    text-decoration: none;
+
+}
+
+#copyright{
+    font-size: 14px;
 }
 
 #logo {
@@ -61,11 +133,6 @@ a:hover, a:active {
     margin-left:800px;
 
 }
-#mainNav{
-    float: left;
-    width: 75px;
-    height: 75px;
-}
 
 #welcome{
     margin-top: 25px;
@@ -73,15 +140,17 @@ a:hover, a:active {
     overflow: hidden;
 
 }
-#welcome p{
-    line-height: 586px;
-}
+
 #welcomeimagewithtext {
     float:left;
     width: 1920px;
     height: 586px;
 }
-
+#banner{
+    width: 1920px;
+    height: 586px;
+}
+}
 #welcomeimagewithtext img {
     opacity: 1;
 
@@ -113,6 +182,16 @@ a:hover, a:active {
 #productLineImage img:hover{
     opacity:0.7;
 }
+#productimg{
+    float:left;
+    width: 900px;
+    height: 682px; 
+}
+#adimg{
+    float:right;
+    width: 900px;
+    height: 682px;  
+}
 
 #advertismentsImage {
     float: right;
@@ -126,9 +205,7 @@ a:hover, a:active {
 #advertismentsImage img:hover{
     opacity: 0.7;
 }
-#productLine p{
-    line-height: 682px;
-}
+
 
 #mainFooter {
     margin-top: 40px;
@@ -139,9 +216,13 @@ a:hover, a:active {
 
 #footerlogo{
     float: left;
-    width:100px; 
-    height:100px;
-    margin: 20px
+    width:125px; 
+    margin-top: 10px;
+    margin-left: 5px;
+    
+}
+#hands{
+    width:780px;
 }
 #footerNav{
     float: left;
@@ -149,9 +230,18 @@ a:hover, a:active {
     height:75px;
     margin: 20px;
 }
+#footerNav ul li a:hover{
+    background-color: #f3f3f3;
+    color:#BA2329;
+
+}
+nav ul li a:hover{
+    background-color: #f3f3f3;
+    color:#BA2329; 
+
+}
 #copyright{
     float: right;
-    width: 310px;
     height:75px;
     margin: 20px;
 }
@@ -182,12 +272,25 @@ a:hover, a:active {
     
 }
 #Beginningstext p{
-
+    color: #0B182F;
+    font-size: 30px ;
+    text-align: left;
+    margin: 0;
+    font-family: bely,serif;
+    font-weight: 400;
+    font-style: normal;
     margin-left: 20px
 }
 
 #beginningsbottom{
     float: left;
+    color: #0B182F;
+    font-size: 30px ;
+    text-align: left;
+    margin: 0;
+    font-family: bely,serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #productLine{
@@ -207,27 +310,213 @@ a:hover, a:active {
     line-height: 482px;
 }
 
-.slider{
-    margin:50px auto;
-    width: 50%;
+#ad{
+    width: 700px;
+    margin-left: 600px;
+}
+#ad2{
+    width: 700px;
+    margin-left: 600px;
+}
+#ad3{
+    width: 700px;
+    margin-left: 600px;
+}
+#ad4{
+    width: 700px;
+    margin-left: 600px;
+}
+#ad5{
+    width: 700px;
+    margin-left: 600px;
 }
 
-.img-box img{
+/* Parent wrapper to carousel. Width can be changed as needed. */
+.carousel-wrapper {
+    overflow: hidden;
+    
+    margin: auto;
+  }
+  
+  /* Apply 'border-box' to 'box-sizing' so border and padding is included in the width and height. */
+  .carousel-wrapper * {
+    box-sizing: border-box;
+    margin-top: 100px;
+  }
+  
+  /* We'll be using the 'transform' property to move the carousel's items, so setting the 'transform-style' to 'preserve-3d' will make sure our nested elements are rendered properly in the 3D space. */
+  .carousel {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  /* By default we're hiding items (except the initial one) until the JS initiates. Elements are absolutely positioned with a width of 100% (as we're styling for mobile first), letting the content's height dictate the height of the carousel. Our magic property here for all our animation needs is 'transition', taking the properties we wish to animate 'transform' and 'opacity', along with the length of time in seconds. */
+  .carousel__photo {
+    opacity: 0;
+    position: absolute;
+    top:0;
     width: 100%;
-}
+    margin: auto;
+    padding: 1rem 4rem;
+    z-index: 100;
+    transition: transform .5s, opacity .5s, z-index .5s;
+  }
+  
+  /* Display the initial item and bring it to the front using 'z-index'. These styles also apply to the 'active' item. */
+  .carousel__photo.initial,
+  .carousel__photo.active {
+    opacity: 1;
+    position: relative;
+    z-index: 900;
+  }
+  
+  /* Set 'z-index' to sit behind our '.active' item. */
+  .carousel__photo.prev,
+  .carousel__photo.next {
+    z-index: 800;
+  }
+  
+  /*  left */
+  .carousel__photo.prev {
+    transform: translateX(-100%);
+  }
+  
+  /* right */
+  .carousel__photo.next {
+    transform: translateX(100%);
+  }
+  
 
-.btn{
-   border:none;
-   outline: none;
-   background-color: #333; 
-   padding: 10px 30px;
-   font-size: 20px;
-   color: #ddd;
-   cursor: pointer;
-   margin: 10px auto;
+  .carousel__button--prev,
+  .carousel__button--next {
+    position: absolute;
+    top:50%;
+    width: 3rem;
+    height: 3rem;
+    background-color: #BA2329;
+    opacity: 0.7;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    cursor: pointer; 
+    z-index: 1001; /* Sit on top of everything */
+    
+  }
+  .carousel__button--prev:hover, 
+  .carousel__button--next:hover {
+      opacity: 1;
 
-}
+  }
+  
+  .carousel__button--prev {
+    left:0;
+  }
+  
+  .carousel__button--next {
+    right:0;
+  }
+  
+  /* Use pseudo elements to insert arrows inside of navigation buttons */
+  .carousel__button--prev::after,
+  .carousel__button--next::after {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 54%;
+    border-right: 2px solid #6d070a;
+    border-bottom: 2px solid #6d070a;
+    transform: translate(-50%, -50%) rotate(135deg);
+  }
+  
+  .carousel__button--next::after {
+    left: 47%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
 
-.btn:hover{
-    color: #000;
-}
+
+
+  .contact-footer {
+    float: right;
+    position: relative;
+    top: 20px
+  
+ }
+ .footer-contactpage{
+    margin-top: 200px;
+    top: -10px;
+    
+ }
+ 
+ .contact-form {
+     display: block;
+    width:700px;
+    height: 700px;
+    background-color: #0B182F;
+    
+    
+    left: 50%;
+    transform: translate(-50%,-30%);
+    position: relative;
+    border-radius: 14px;
+    font-family: "bely", sans-serif;
+   
+    
+   
+ 
+ 
+ }
+ form {
+    margin:35px;
+    
+ 
+ }
+ 
+ .input-field {
+    width: 600px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px #FCB847;
+    border-radius: 14px;
+    outline: none;
+    font-family: "bely",serif;
+ 
+ }
+ .textarea-field {
+    height: 375px;
+    padding-top: 10px;
+ 
+ }
+ .contact-title{
+    margin-top: 10px;
+    text-align: center;
+   
+ }
+ 
+ .contact-desc {
+    
+    font-family: "bely", sans-serif;
+    font-size: 18px;
+    margin-bottom: 300px;
+    text-align: center;
+    
+ }
+ 
+ button{
+    padding: 10px 25px;
+    background-color: white;
+    opacity: 1;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "bely",serif;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  button:hover{
+    background-color: #f3f3f3;
+    opacity: 0.8;
+  }

@@ -9,14 +9,66 @@
     <title>product</title>
 </head>
 <body>
-    <div class="slider">
-        <div class="img-box">
-            <img src="images/deshaw-leslie-bottle2.jpg"alt="" class="slider-img">
-        </div>
+    <div id="siteContainer">
+        
+        <header id="mainHeader">
+            <h1 class="hidden">Header</h1>
+            <nav id="mainNav">
+                <h2 class="hidden">Main Navigation</h2>
+                <ul>
+                    <li><img id="menubtn" src="images/menu-button.png" alt="menu button" >
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Our Beginnings</a></li>
+                        <li><a href="products.html">Our Product Line</a></li>
+                        <li><a href="adverts.html">Advertisments</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                    </li>
+                    
+                </ul>
 
-        <button class="btn" onclick="prev()">Prev</button>
-        <button class="btn" onclick="next()">Next</button>
-    </div>
+            </nav>
+            <div id="logo"><img id="logoimg" src="images/scottslogosmall.png" alt="Scotts Logo" ></div>
+            
+        </header>
+
+        <h2 class="hidden">Product Images</h2>
+
+        <div class="carousel-wrapper">
+            <div class="carousel">
+              <img class="carousel__photo initial" src="images/original-text.png" alt="a bottle of original scotts with text off to the side that reads The Original Fall Lawn Food is a refreshing drink for any occasion! Our Original formula delivers a crisp and full flavoured experience. With hints of lemon it'll bring you back to summer">
+              <img class="carousel__photo" src="images/bacon-text.png" alt="a bottle of Unlimited Bacon scotts with text off to the side that reads Unlimited Bacon is something everyone wants! This flavour gives deep notes of smokey meat. Unlimited Bacon pairs well with your Sunday breakfast! Who wouldn't choose Unlimited Bacon?">
+              <img class="carousel__photo" src="images/cheddar-text.png" alt="a bottle of Cheddar Cheese scotts with text off to the side that reads Our Cheddar Cheese flavour brings you back to eating a bucket of Mac and Cheese with your Dad. The good old days. Just as old as the cheddar used in our Cheddar Cheese beer!">
+              <img class="carousel__photo" src="images/grass-text.png" alt="a bottle of Great Grass scotts with text off to the side that reads I know what you're thinking. Great Grass? Really? Yes we're serious! We went back to our roots (no pun intended) and created a grass flavoured beer. This beer will remind you of mowing the lawn, we know you love to mow your lawn.We recommend drinking Great Grass Scotts in the winter while you're crying. or your eyes are just sweating because you miss seeing grass. ">
+              <img class="carousel__photo" src="images/peanut-text.png" alt="a bottle of peanuts and pretzels scotts with text off to the side that reads Scotts Peanuts and Pretzels is the best beer for at the pub playing pool with your buddies! This beer gives the nice salty taste of peanuts and pretzels but just with one swig! No need for chewing!">
+                
+              <div class="carousel__button--next"></div>
+              <div class="carousel__button--prev"></div>
+            </div>
+          </div>
+
+          <h1 class="hidden">Footer</h1>
+          <footer id="mainFooter">
+              <div ><img id="footerlogo" src="images/single-lion-logo.png" alt="small scotts logo" ></div>
+              <nav id="footernav">
+                  <h2 class="hidden">Footer Navigation</h2>
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">Our Beginnings</a></li>
+                      <li><a href="products.html">Our Product Line</a></li>
+                      <li><a href="adverts.html">Advertisments</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+              </nav>
+              <div id="copyright"><p>copyright 2022</p></div>
+  
+          </footer>
+    
+
+
+
+</div>
 
     <script src="js/main.js"></script>
 </body>
